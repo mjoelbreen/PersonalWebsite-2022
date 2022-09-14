@@ -1,19 +1,33 @@
 import * as React from "react"
 
+
 const pageStyles = {
   color: "#232129",
-  padding: 96,
+ 
+  
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  
+  
 }
+
+
+
 const headingStyles = {
-  marginTop: 0,
+  textAlign: "center",
+  marginTop: 100,
   marginBottom: 64,
-  maxWidth: 320,
+  fontSize: 50,
+  
+  
 }
 const headingAccentStyles = {
+  fontSize: 30,
   color: "#663399",
 }
 const paragraphStyles = {
+  display: "flex",
+  margin: "5% 5%",
+  fontSize: 16,
   marginBottom: 48,
 }
 const codeStyles = {
@@ -47,11 +61,14 @@ const docLinkStyle = {
   marginBottom: 24,
 }
 
-const imageStyle = {
-  display: "inline-flex",
-  height: "20%",
-  width: "20%",
-  borderRadius: "15%"
+
+const profileImageStyles = {
+  display: "flex",
+  margin: "0 auto",
+  height: 200,
+  width: 200,
+  borderRadius: "50%",
+  zIndex: 1
 }
 
 const descriptionStyle = {
@@ -86,16 +103,29 @@ const badgeStyle = {
 
 const IndexPage = () => {
   return (
+    
     <main style={pageStyles}>
+     
       <h1 style={headingStyles}>
-        Hi, I'm Martin
+        Martin Breen
         <br />
-        <span style={headingAccentStyles}>— Welcome to my Website</span>
-      </h1>
-      <p style={paragraphStyles}>
-        I'm a developer based in New Orleans.
-      </p>
-      <img src="https://ca.slack-edge.com/T01E7DMQ83T-U03GD47SPBQ-a033b2f28121-512" style={imageStyle}/>
+        <span style={headingAccentStyles}>XR Software Developer</span>
+      
+        </h1>
+      
+        <img src="https://ca.slack-edge.com/T01E7DMQ83T-U03GD47SPBQ-a033b2f28121-512" style={profileImageStyles}/>
+       
+      <span style={paragraphStyles}>
+      I'm a developer based in New Orleans.
+        </span>
+        
+       
+        
+     
+      
+      
+      
+      
       
     </main>
   )
