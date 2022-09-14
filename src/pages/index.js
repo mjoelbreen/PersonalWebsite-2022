@@ -47,6 +47,13 @@ const docLinkStyle = {
   marginBottom: 24,
 }
 
+const imageStyle = {
+  display: "inline-flex",
+  height: "20%",
+  width: "20%",
+  borderRadius: "15%"
+}
+
 const descriptionStyle = {
   color: "#232129",
   fontSize: 14,
@@ -88,6 +95,7 @@ const IndexPage = () => {
       <p style={paragraphStyles}>
         I'm a developer based in New Orleans.
       </p>
+      <img src="https://ca.slack-edge.com/T01E7DMQ83T-U03GD47SPBQ-a033b2f28121-512" style={imageStyle}/>
       
     </main>
   )
